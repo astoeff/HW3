@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="main.css">
+         <script type="text/javascript" src="main.js" defer></script>
+    </head>
+    <body>
+	    <form action="#" method="post">
+		<legend style="text-align: center">Регистрация</legend>
+		<label id="request_label" class="error"></label>
+		<fieldset>
+		    <label for="username">Потребителско име</label>
+		    <input type="text" id="username" name="username" required />
+		    <label id="username_error" class="error"></label>
+		</fieldset>
+		<fieldset>
+		    <label for="names">Име и фамилия</label>
+		    <input type="text" id="names" name="names" required />
+		    <label id="names_error" class="error"></label>
+		</fieldset>
+		<fieldset>
+		    <label for="email">Имейл</label>
+		    <input type="text" id="email" name="email" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,6}$" placeholder="email@gmail.com" required />
+		    <label id="email_error" class="error"></label>
+		</fieldset>
+		<fieldset>
+		    <label for="password">Парола</label>
+		    <input type="password" id="password" name="password" required />
+		    <label id="password_error" class="error"></label>
+		</fieldset>
+		<fieldset>
+		    <label for="city">Град</label>
+		    <input type="text" id="city" name="city" />
+		    <label for="street">Улица</label>
+		    <input type="text" id="street" name="street" />
+		    <label for="postcode">Пощенски код</label>
+		    <input type="text" id="postcode" name="postcode" pattern="^[0-9]{5}-[0-9]{4}$" />
+		    <label id="address_error" class="error"></label>
+		</fieldset>
+		<button type="button" id="submit" name="submit">Регистрация</button>
+	    </form>
+    </body>
+</html>
